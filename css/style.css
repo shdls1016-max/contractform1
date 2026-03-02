@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+@import url(reset.css);
+
+
+label{line-height: 1.6; letter-spacing: 0.02em; padding: 7px 0; text-align: center; white-space: nowrap;}
+input{line-height: 1.6; padding: 7px 0px; border: 0; }
+
+.margin{margin:0 4%;}
+.paper{text-align: center; margin: 40px; }
+.topSign{display: flex; flex-direction: column; align-items: center; row-gap: 16px;}
+.topSign > .C-align > input{width: 20%;  margin-left: 2%;}
+.topSign > .C-align{width: 100%; display: flex; align-items: center;}
+.topSign {}
+
+.table1{display: grid; grid-template-columns:1fr; grid-template-rows: 1fr; margin: 12px 0;}
+.table1 .row{display: flex; border: 1px solid #111;}
+.table1 .row > label{border-right: 1px solid #111; width: 180px; text-align: center; background: #fafafa;}
+.table1 .row input{flex-grow: 1;}
+.table1 .row .duration{flex-grow: 1;}
+.table1 .row .duration > input{flex-grow: 1;}
+
+.table2{display: grid; grid-template-columns: 80px 200px 1fr; grid-template-rows: 5fr; border: 1px solid #111;}
+.table2 input{}
+.table2 .table2name{grid-row: 1/6; background: #fafafa; position: relative; z-index: 1;}
+.table2 .salarySet{display: flex; gap: 4px; align-items: center; justify-content: center; grid-column: 2/4; border-bottom: 1px solid #111;}
+.table2 .salarySet > input{width: 34%; margin-left: 8%;}
+.table2 .salarySet{}
+
+.table2 .divi{border-right: 1px solid #111; border-bottom: 1px solid #111; background: #fafafa;}
+.table2 .divi:last-of-type{ border-bottom: 0;}
+.table2 .table2name{display: flex; align-items: center; justify-content: center; letter-spacing: 0.4em; width: 100%; height: 100%; border-right: 1px solid #111; }
+.table2 .mInputSet{display: flex;  align-items: center; border-bottom: 1px solid #111; padding: 0 4%; box-sizing: border-box; width: 100%;}
+
+
+.table2 .mInputSet label{margin: 0 4px;}
+.table2 .mInputSet > input#m1{margin-left: 8%; flex-grow: 1;}
+.table2 .mInputSet > input#m2{margin-left: 8%; flex-grow: 1;}
+.table2 .mInputSet > input#m3{width: 50px; margin-left: 4px; padding: 0;}
+.table2 .mInputSet.m3{white-space: nowrap; flex-wrap: wrap;}
+.table2 .mInputSet.m4ckParent{display: flex; flex-wrap: wrap; column-gap: clamp(4px,4%,20px) ;}
+.table2 .mInputSet .m4ck-1{display: flex; line-height: 1.2;}
+.table2 .mInputSet .m4ck-2{display: flex; line-height: 1.2;}
+.table2 .mInputSet .m4ck-1 label{padding: 0;}
+.table2 .mInputSet .m4ck-2 label{padding: 0;}
+.margin > p{margin: 12px 0;}
+.margin > p > div{line-height: 1.6;}
+
+.signDate{text-align: center; margin-bottom: 12px;}
+
+.table3{display: grid; grid-template-columns: 100px 1fr 100px 1fr; grid-template-rows: repeat(3, 1fr); background: #eaeaea; padding:20px;}
+.table3 > input{background: transparent;}
+.table3 > #co{grid-column: 2/5; }

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="margin">
+        <h2 class="paper">표준근로계약서</h2>
+        <div class="topSign">
+           <div class="C-align">
+                <input type="text" name="nameOfceo"> <span>(이하 "사업주"라 함) 과(와)</span>
+                <input type="text" name="nameOfworker"> <span>(이하 "근로자"라 함) 은</span>
+           </div>
+            <div>다음과 같이 근로계약을 체결한다. </div>
+        </div>
+    
+        <div class="table1">
+            <div class="row">
+                <label for="durationStart">근로계약기간</label>
+                <div class="duration">
+                    <input type="date" id="durationStart" name="durationStart">
+                    -
+                    <input type="date" id="durationEnd" name="durationEnd">
+                </div>
+            </div>
+    
+            <div class="row">
+                <label for="location">근무장소</label>
+                <input type="text" id="location" name="location">
+            </div>
+    
+            <div class="row">
+                <label for="workType">업무의 내용</label>
+                <input type="text" id="workType" name="workType">
+            </div>
+        </div>
+    
+        <div class="table2">
+            <span class="table2name">임금</span>
+            <div class="salarySet">
+                <label for="salary">월(일,시간)급 : </label> 
+                <input type="number" id="salary" name="salary">
+                <span>원</span>
+            </div>
+            <label for="m1" class="divi">상여금</label>
+            <div class="mInputSet">
+                <label for="m1ck1">있음</label><input type="checkbox" id="m1ck1" name="m1ck">
+                <label for="m1ck2">없음</label><input type="checkbox" id="m1ck2" name="m1ck">
+                <input type="number" id="m1" name="m1won"> <span>원</span>
+            </div>
+    
+            <label for="m2" class="divi">기타급여(제수당 등)</label>
+            <div class="mInputSet">
+                <label for="m2ck1">있음</label><input type="checkbox" id="m2ck1" name="m2ck">
+                <label for="m2ck2">없음</label><input type="checkbox" id="m2ck2" name="m2ck">
+                <input type="number" id="m2" name="m2won"> <span>원</span>
+            </div>
+            
+            <label for="m3" class="divi">임금지급일</label>
+            <div class="mInputSet m3">
+                <span>매월</span><span>(매주 또는 매일)</span>
+                <input type="number" id="m3" name="m3date"> 
+                <span>일 </span><span>(휴일의 경우는 전일 지급)</span>
+            </div>
+            
+            <label for="m4" class="divi">지급방법</label>
+            <div class="mInputSet m4ckParent">
+                <div class="m4ck-1">
+                    <label for="m4ck1">근로자에게 직접지급</label>
+                    <input type="checkbox" id="m4ck1" name="m4ck">
+                </div>
+    
+                <div class="m4ck-2">
+                    <label for="m4ck2">근로자 명의 예금통장에 입금</label>
+                    <input type="checkbox" id="m4ck2" name="m4ck">
+                </div>
+            </div>
+        </div>
+    
+        <p>
+            <div>- 연차유급휴가 : 연차유급휴가는 근로기준법에서 정하는 바에 따라 부여함</div>
+            <div>- 사회보험 적용여부(해당란에 체크) : 
+                <input type="checkbox" name="insurance">고용보험
+                <input type="checkbox" name="insurance">산재보험
+                <input type="checkbox" name="insurance">국민연금
+                <input type="checkbox" name="insurance">건강보험
+            </div>
+            <div>- 근로계약서 교부 : 사업주는 근로계약을 체결함과 동시에 본 계약서를 사본하여 근로자의 교부요구와 관계없이 근로자에게 교부함(근로기준법 제17조 이행)</div>
+            <div>- 근로계약, 취업규칙 등의 성실한 이행의무 : 사업주와 근로자는 각자가 근로계약, 취업규칙, 단체협약을 지키고 성실하게 이행하여야 함</div>
+            <div>- 이 계약에 정함이 없는 사항은 근로기준법령에 의함</div>
+        </p>
+    
+        <div class="signDate"><input type="date" name="signDate"></div>
+</div>
+
+    <div class="table3">
+        <label for="co">사업체명 :</label>
+        <input type="text" id="co" name="co">
+
+        <label for="address1">주소 :</label>
+        <input type="text" id="address1" name="address1">
+        <label for="address2">주소 :</label>
+        <input type="text" id="address2" name="address2">
+
+        <label for="tel1">연락처 :</label>
+        <input type="tel" id="tel2" name="tel2">
+        <label for="tel1">연락처 :</label>
+        <input type="tel" id="tel2" name="tel2">
+
+        <label for="ceosign">대표자 :</label>
+        <input type="text" id="ceosign" name="ceosign">
+        <label for="workersign">근로자 성명 :</label>
+        <input type="text" id="workersign" name="workersign">
+    </div>
+</body>
+</html>
